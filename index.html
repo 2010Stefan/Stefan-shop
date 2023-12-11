@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="index.js" defer></script>
+
+    <title>Your Cart</title>
+
+  </head>
+  <body>
+
+    <p class="cart-title">
+      Cart Quantity
+    </p>
+
+    <div class="div-center">
+
+      <button onclick="
+        alert(`Cart quantity: ${cartQuantity}`);
+      " class="quantity">
+        Show Quantity
+      </button>
+
+      <button onclick="
+        cartQuantity++;
+      " class="add-to-cart">
+        Add to Cart
+      </button>
+
+      <button onclick="
+        cartQuantity = cartQuantity + 2;
+      " class="add-2">
+       +2
+      </button>
+
+      <button onclick="
+        cartQuantity = cartQuantity + 3;
+      " class="add-3">
+      +3
+      </button>
+
+      <button onclick="
+        cartQuantity = 0;
+      " class="reset-cart">
+        Reset Cart
+      </button>
+
+    </div>
+
+  </body>
+</html>
